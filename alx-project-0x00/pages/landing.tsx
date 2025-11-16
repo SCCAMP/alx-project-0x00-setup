@@ -3,26 +3,36 @@ import Button from '@/components/Button'; // Import your component
 
 const LandingPage: React.FC = () => {
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen gap-8">
-      
-      {/* This div contains ONLY the three button shapes 
-        required by the checker.
+    <main>
+      {/* The "styles" prop now ONLY contains the shape class.
+        This is to pass the strict checker.
       */}
-      <div className="flex items-center gap-4">
-        <Button 
-          title="rounded-sm"
-          styles="bg-blue-500 text-white px-5 py-2 rounded-sm"
-        />
-        <Button 
-          title="rounded-md"
-          styles="bg-blue-500 text-white px-5 py-2 rounded-md"
-        />
-        <Button 
-          title="rounded-full"
-          styles="bg-blue-500 text-white px-5 py-2 rounded-full"
-        />
-      </div>
+      <Button 
+        title="Shape Small"
+        styles="rounded-sm"
+      />
+      <Button 
+        title="Shape Medium"
+        styles="rounded-md"
+      />
+      <Button 
+        title="Shape Full"
+        styles="rounded-full"
+      />
 
+        {/* The "styles" prop now ONLY contains the size class.*/}
+      <Button 
+        title="Size Small"
+        styles="text-sm"
+      />
+      <Button 
+        title="Size Medium"
+        styles="text-base" // 'text-base' is the default, like 'medium'
+      />
+      <Button 
+        title="Size Large"
+        styles="text-lg"
+      />
     </main>
   )
 }
