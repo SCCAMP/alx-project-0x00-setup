@@ -10,15 +10,15 @@ const LandingPage: React.FC = () => {
       */}
       <div className="flex items-center gap-4">
         <Button 
-          title="Rounded SM"
+          title="rounded-sm"
           styles="bg-blue-500 text-white px-5 py-2 rounded-sm"
         />
         <Button 
-          title="Rounded MD"
+          title="rounded-md"
           styles="bg-blue-500 text-white px-5 py-2 rounded-md"
         />
         <Button 
-          title="Rounded Full"
+          title="rounded-full"
           styles="bg-blue-500 text-white px-5 py-2 rounded-full"
         />
       </div>
